@@ -6,38 +6,44 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* --- DISEÑO DEL MENÚ (TEXTO BLANCO) --- */
+/* --- MENÚ CON IMAGEN DE FONDO --- */
 .navbar {
-    background-color: #8073FF; /* Tu fondo morado */
-    padding: 30px 0;
-    border-bottom: 2px solid black;
+    /* Aquí pones la ruta de tu imagen */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("IMG/tu-fondo.jpg");
+    
+    background-size: cover;       /* Hace que la imagen cubra todo el menú */
+    background-position: center;  /* Centra la imagen */
+    padding: 40px 0;
+    border-bottom: 3px solid black;
     text-align: center;
 }
 
 .nav-logo {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .nav-links {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Espacio entre las palabras */
+    gap: 40px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: white; /* Texto blanco como pediste */
+    color: white;           /* Texto blanco */
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
+    letter-spacing: 2px;
     transition: 0.3s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra al texto para que resalte */
 }
 
-/* Efecto sutil al pasar el mouse para saber dónde estás haciendo clic */
 .nav-links a:hover {
-    color: #DBFFFF; /* Cambia al color del fondo de la página para resaltar */
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    color: #90EE90; /* Un color de acento cuando pases el mouse */
+    transform: scale(1.1);
 }
+
 /* --- CONTENEDOR Y TARJETAS --- */
 .content-center {
     max-width: 800px;
