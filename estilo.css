@@ -17,41 +17,68 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* --- MENÚ DE NAVEGACIÓN (NAVBAR) --- */
+/* --- NUEVA NAVBAR ESTILO PROFESIONAL --- */
 .navbar {
-    background-color: #8073FF;
-    padding: 20px 0;
-    border-bottom: 3px solid #000;
-    text-align: center;
+    background-color: #2c2c3e; /* Color oscuro profesional */
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: sticky; /* Se queda arriba al bajar */
+    top: 0;
+    z-index: 1000;
 }
 
-.nav-logo img {
-    display: block;
-    margin: 10px auto;
-    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.2));
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, links a la derecha */
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-brand img {
+    height: 40px; /* Tamaño controlado del logo */
+    width: auto;
+}
+
+.nav-brand span {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
 }
 
 .nav-links {
-    margin-top: 15px;
+    display: flex;
+    gap: 25px; /* Espacio entre enlaces */
 }
 
 .nav-links a {
+    color: #d1d1d1;
     text-decoration: none;
-    padding: 12px 20px;
-    background-color: #90EE90; /* lightgreen */
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 10px;
-    margin: 5px;
-    font-weight: bold;
-    display: inline-block;
-    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 5px 0;
 }
 
+/* Efecto de subrayado al pasar el mouse */
 .nav-links a:hover {
-    background-color: #76c976;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    color: #8073FF; /* Color de acento */
+}
+
+/* Estilo para los botones de las páginas de canciones (Volver) */
+.btn-back {
+    background-color: #8073FF;
+    color: white !important;
+    padding: 8px 15px !important;
+    border-radius: 5px;
 }
 
 /* --- CONTENEDOR PRINCIPAL --- */
