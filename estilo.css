@@ -1,0 +1,139 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    background-color: #DBFFFF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* --- MENÚ DE NAVEGACIÓN (NAVBAR) --- */
+.navbar {
+    background-color: #8073FF;
+    padding: 20px 0;
+    border-bottom: 3px solid #000;
+    text-align: center;
+}
+
+.nav-logo img {
+    display: block;
+    margin: 10px auto;
+    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.2));
+}
+
+.nav-links {
+    margin-top: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: #90EE90; /* lightgreen */
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #76c976;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.content-center {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* --- TARJETAS DE PERSONAJES Y CANCIONES --- */
+.profile, .song-card, .prod-card {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.char-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+/* Estilo para los datos (párrafos) */
+p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+p strong {
+    color: #5d52cc;
+}
+
+/* --- BOTONES Y ENLACES --- */
+.btn-large {
+    text-decoration: none;
+    padding: 20px;
+    background-color: #90EE90;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.btn-large:hover {
+    background-color: #000;
+    color: #90EE90;
+}
+
+.btn-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    background-color: #8073FF;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #000;
+    transition: 0.3s;
+}
+
+.btn-link:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* --- PIE DE PÁGINA --- */
+.footer-bar {
+    background-color: #8073FF;
+    height: 60px;
+    border-top: 3px solid #000;
+    margin-top: 50px;
+}
